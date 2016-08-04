@@ -50,7 +50,6 @@ RUN set -ex \
 	&& cd /usr/src/python \
 	&& ./configure \
 		--enable-loadable-sqlite-extensions \
-		--enable-shared \
 	&& make -j$(nproc) \
 	&& make install \
 	&& ldconfig \
