@@ -49,7 +49,6 @@ RUN set -ex \
 	\
 	&& cd /usr/src/python \
 	&& ./configure \
-		--enable-shared \
 		--enable-unicode=ucs4 \
 	&& make -j$(nproc) \
 	&& make install \
