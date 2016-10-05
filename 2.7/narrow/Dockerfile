@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM quay.io/wantedly/buildpack-deps:14.04
 
 # divert many traces of Debian Python (so that they are not used by mistake)
 # https://bugs.debian.org/33263 :(
