@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM buildpack-deps:jessie
+FROM quay.io/wantedly/buildpack-deps:14.04
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
@@ -29,6 +29,7 @@ RUN set -ex \
 	&& buildDeps=' \
 		tcl-dev \
 		tk-dev \
+		wget \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	\

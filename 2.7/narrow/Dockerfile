@@ -23,6 +23,7 @@ RUN set -ex \
 	&& buildDeps=' \
 		tcl-dev \
 		tk-dev \
+		wget \
 	' \
 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
 	\
