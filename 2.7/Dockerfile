@@ -1,4 +1,4 @@
-FROM quay.io/wantedly/buildpack-deps:14.04
+FROM quay.io/wantedly/buildpack-deps:12.04
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
